@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Release Stats</title>
+  <meta name="description" content="Release download statistics for YoriKv's projects.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📦</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <div>
+        <h1>Release stats</h1>
+        <p class="subtitle">Download counts for <a id="owner-link" href="#"></a>'s projects, newest repository first</p>
+      </div>
+      <div class="toolbar">
+        <span id="status" class="status" role="status" aria-live="polite"></span>
+        <button id="refresh" type="button">Refresh</button>
+      </div>
+    </header>
+
+    <div id="notice" class="notice" hidden></div>
+
+    <section id="overview" class="card overview" aria-label="All projects" hidden></section>
+
+    <div id="projects" class="projects"></div>
+  </main>
+
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
